@@ -1,0 +1,198 @@
+body {
+	background: #1F293D;
+}
+
+h1, h2, h3, p, li, a {
+	color: white;
+}
+
+a:hover {
+	font-size: 120%;
+	color: red;
+}
+
+nav ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.container {
+	display: grid;
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+	grid-template-areas: "logo banner"
+						 ". nav"
+						 "menu section1"
+						 "menu section2"
+						 "menu section3"
+						 "footer footer";
+	grid-template-rows: 300px 70px 250px 250px 250px 50px;
+	grid-template-columns: 1fr 3fr;
+}
+
+.logo {
+	grid-area: logo;
+	background: linear-gradient(135deg, rgba(20, 20, 20, 0.3) 50%, rgba(20, 20, 20, 0.3) 50%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdYzQjG4vVgfANhkvL4Fi1sHw4zZI5xD0q2A&usqp=CAU);
+	background-size: contain;
+}
+
+.banner {
+	grid-area: banner;
+	background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(20, 20, 20, 0.3) 50%), url(https://assuperlistas.files.wordpress.com/2020/01/csgo-brazil-major-ftimg.jpg);
+	background-size: cover;
+	border-radius: 0 120px 0 60px;
+}
+
+.banner:hover {
+	background: linear-gradient(135deg, rgba(20, 20, 20, 0.4) 0%, rgba(20, 20, 20, 0.1) 50%), url(https://assuperlistas.files.wordpress.com/2020/01/csgo-brazil-major-ftimg.jpg);
+	background-size: cover;
+	border-radius: 0 120px 0 60px;
+}
+
+nav {
+	grid-area: nav;
+	background: linear-gradient(135deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 1%);
+	display: flex;
+	word-spacing: 0px;
+	flex-direction: row-reverse;
+	border: 8px solid linear-gradient(135deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 1) 1%);
+	border-radius: 60px 0 0 0;
+	z-index: 10;
+}
+
+li {
+	z-index: 2;
+	font-family: monospace;
+	list-style: none;
+}
+
+a {
+	z-index: 2;
+	font-family: monospace;
+	list-style: none;
+	text-decoration: none;
+}
+
+nav li {
+	padding: 0 20px;
+	color: #B8B8B8;
+	font-size: 20px;
+	align-self: center;
+}
+
+nav a {
+	padding: 0 20px;
+	color: #B8B8B8;
+	font-size: 21px;
+	align-self: center;
+	text-shadow: 1px 1px 10px black;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #fbff0087 !important;
+	font-size: 100% !important;
+
+}
+
+.avatar {
+	border-radius: 50%;
+	border: 3px solid gray;
+	width: 95px;
+	height: 95px;
+}
+
+.avatar:hover {
+	border-radius: 50%;
+	border: 3px solid #fbff0087;
+	width: 100px;
+	height: 100px;
+	box-shadow: -3px 3px 20px #fbff0087;
+}
+
+.menu {
+	grid-area: menu;
+	font-size: 15px;
+	background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 50%, rgba(20, 20, 20, 0.9) 50%);
+	padding-left: 20px;
+	border-radius: 60px 0 0 60px;
+	margin-left: 40px;
+}
+
+.menu h2 {
+	text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: cornsilk;
+    padding-top: 30px;
+}
+
+.menu li {
+	padding: 0;
+	padding-top: 10px;
+	text-decoration: none;
+
+}
+
+.section1 {
+	grid-area: section1;
+	background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.3) 0%), url(https://operationl2p.com/assets/frontpage/de_mirage_sm-2b0feb87ca4a801c8184f28d230f1aa2.jpg);
+	background-size: 100%;
+}
+
+.section1:hover {
+	background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.1) 0%), url(https://operationl2p.com/assets/frontpage/de_mirage_sm-2b0feb87ca4a801c8184f28d230f1aa2.jpg);
+	background-size: 100%;
+}
+
+.section2 {
+	grid-area: section2;
+	background-image: linear-gradient(225deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.3) 32%), url(https://cdn.mos.cms.futurecdn.net/gYKzaS5GhGWqpiDjsb44jM-1200-80.jpg);
+	background-size: 100%;
+}
+
+.section2:hover {
+	background-image: linear-gradient(225deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.1) 32%), url(https://cdn.mos.cms.futurecdn.net/gYKzaS5GhGWqpiDjsb44jM-1200-80.jpg);
+	background-size: 100%;
+}
+
+.section3 {
+	grid-area: section3;
+	background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.3) 0%), url(https://liquipedia.net/commons/images/2/2b/De_new_inferno.jpg);
+	background-size: 100%;
+	border-radius: 0 0 60px 0;
+}
+
+.section3:hover {
+	background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 33%, rgba(20, 20, 20, 0.1) 0%), url(https://liquipedia.net/commons/images/2/2b/De_new_inferno.jpg);
+	background-size: 100%;
+	border-radius: 0 0 60px 0;
+}
+
+
+.textcard {
+	margin: 40px;
+    font-size: 16px;
+
+}
+
+.textcard li {
+	letter-spacing: 1px;
+}
+
+.textcard h2 {
+
+}
+
+.section2text {
+	text-align: -webkit-right;
+}
+
+footer {
+	grid-area: footer;
+    text-align: right;
+    font-size: 12px;
+    color: antiquewhite;
+}
